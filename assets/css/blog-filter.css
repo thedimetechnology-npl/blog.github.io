@@ -1,0 +1,23 @@
+/**
+ * Filter Count Styling
+ */
+
+.filter-count {
+  font-size: 0.85em;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.blog-filter a .filter-count {
+  display: inline;
+  margin-left: 4px;
+}
+
+.blog-filter a:hover .filter-count {
+  color: var(--accent-color);
+}
+
+.blog-filter a.active .filter-count {
+  color: var(--accent-color);
+  font-weight: 700;
+}
