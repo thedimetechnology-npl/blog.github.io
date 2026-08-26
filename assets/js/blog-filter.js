@@ -137,7 +137,7 @@
           // Update the link text with count
           const linkText = link.textContent.trim();
           const baseText = linkText.split('(')[0].trim();
-          link.innerHTML = `${baseText} <span class="filter-count">(${count})</span>`;
+          link.innerHTML = baseText + ' <span class="filter-count">(' + count + ')</span>';
         });
       });
     }

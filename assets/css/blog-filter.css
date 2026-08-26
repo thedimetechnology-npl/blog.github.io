@@ -6,11 +6,12 @@
   font-size: 0.85em;
   color: var(--accent-color);
   font-weight: 600;
+  margin-left: 4px;
+  display: inline;
 }
 
 .blog-filter a .filter-count {
   display: inline;
-  margin-left: 4px;
 }
 
 .blog-filter a:hover .filter-count {
@@ -20,4 +21,18 @@
 .blog-filter a.active .filter-count {
   color: var(--accent-color);
   font-weight: 700;
+}
+
+/* Ensure blog post items maintain proper layout */
+.blog-post-item {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.blog-post-item[style*="display: none"] {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
